@@ -101,3 +101,36 @@ These plots suggest that:
 - the two groups largely overlap,  
 - no single feature is sufficient to separate members from non-members cleanly,  
 - this overlap explains why the final attack AUC remains close to **0.52**.
+
+
+### 7. Project Architecture
+
+![Pipeline OverView](images/pipeline_overview.drawio.png)
+
+
+```text
+AI-privacy-analysis
+
+├── README.md
+├── .gitignore
+├── MIA_method/
+│   ├── AI_Model/
+│   │   └── cnn_vgg16_transfer_melanoma.keras
+│   └── MIA_method.ipynb
+├── images/
+│   ├── mia_roc.png
+│   ├── pipeline_overview.drawio.png
+│   └── mia_features.png
+├── HAM10000_Dataset/
+│   ├── HAM10000_features_colors.csv
+│   ├── HAM10000_metadata.csv
+│   ├── HAM10000/
+│   │   ├── ISIC_0024306.png
+│   │   ├── ISIC_0024307.png
+│   │   └── ...
+│   ├── HAM10000_segmentations_lesion_tschandl/
+│   │   ├── ISIC_0024306_segmentation.png
+│   │   ├── ISIC_0024307_segmentation.png
+│   │   └── ...
+
+```
