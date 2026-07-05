@@ -220,3 +220,4 @@ __marimo__/
 *.jpg
 !images/mia_features.png
 !images/mia_roc.png
+!images/pipeline_overview.drawio.png
